@@ -1,0 +1,32 @@
+1: }
+2: 	}
+3: 		out.close();
+4: 		
+5: 		}
+6: 			out.println(lineCount++ + ": " + it.previous());
+7: 		while(it.hasPrevious()){
+8: 		ListIterator<String> it = stringlist.listIterator(stringlist.size());
+9: 		PrintWriter out = new PrintWriter(outputfile);
+10: 		int lineCount = 1;
+11: 		
+12: 		}
+13: 			stringlist.add(s);
+14: 		while((s = in.readLine() )!= null){
+15: 		String s;
+16: 		List<String> stringlist = new LinkedList<String>();
+17: 		BufferedReader in = new BufferedReader(new FileReader(args[0]));
+18: 		// TODO 自动生成的方法存根
+19: 	public static void main(String[] args) throws IOException {
+20: 	static String outputfile = "p18_12_output.out";
+21: 
+22: public class p18_12 {
+23: 
+24: import java.util.ListIterator;
+25: import java.util.List;
+26: import java.util.LinkedList;
+27: import java.io.PrintWriter;
+28: import java.io.IOException;
+29: import java.io.FileReader;
+30: import java.io.BufferedReader;
+31: 
+32: package io;

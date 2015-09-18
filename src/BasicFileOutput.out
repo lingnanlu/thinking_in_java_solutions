@@ -1,0 +1,33 @@
+1: package io;
+2: import java.io.*;
+3: 
+4: public class BasicFileOutput {
+5: 	
+6: 	static String file = "BasicFileOutput.out";
+7: 	
+8: 	public static void main(String[] args) throws IOException {
+9: 		// TODO 自动生成的方法存根
+10: 		BufferedReader in = new BufferedReader(
+11: 				new StringReader(
+12: 						BufferedInputFile.read("./io/BasicFileOutput.java")));
+13: 		
+14: 		//PrintWriter out = new PrintWriter(
+15: 		//		new BufferedWriter(new FileWriter(file)));
+16: 		
+17: 		
+18: 		//BufferedWriter out = new BufferedWriter(new FileWriter(file));
+19: 		
+20: 		FileWriter out = new FileWriter(file);
+21: 		int lineCount = 1;
+22: 		String s;
+23: 		while((s = in.readLine()) != null){
+24: 			out.write(lineCount++ + ": " + s + "\n");
+25: 		}
+26: 		
+27: 		out.close();
+28: 		in.close();
+29: 		
+30: 		System.out.println(BufferedInputFile.read(file));
+31: 	}
+32: 
+33: }
